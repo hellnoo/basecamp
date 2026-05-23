@@ -228,8 +228,10 @@ export default function AdminPage() {
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault(); setSaving(true)
-    if (editing) await supabase.from('menu_items').update(form).eq('id', editing.id)
-    else await supabase.from('menu_items').insert(form)
+    const { error } = editing
+      ? await supabase.from('menu_items').update(form).eq('id', editing.id)
+      : await supabase.from('menu_items').insert(form)
+    if (error) { alert('Gagal simpan: ' + error.message); setSaving(false); return }
     await loadItems(); setShowForm(false); setSaving(false)
   }
 
