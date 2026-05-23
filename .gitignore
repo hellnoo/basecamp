@@ -22,3 +22,4 @@ yarn-error.log*
 
 # Next.js telemetry
 .next/telemetry/
+.vercel

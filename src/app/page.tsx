@@ -18,10 +18,10 @@ function generatePlaceholder(item: MenuItem): string {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
     <defs>
       <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#7C1515"/><stop offset="100%" stop-color="#2D0808"/>
+        <stop offset="0%" stop-color="#1e4d12"/><stop offset="100%" stop-color="#0d2608"/>
       </linearGradient>
       <radialGradient id="glow" cx="50%" cy="45%" r="45%">
-        <stop offset="0%" stop-color="#A02020" stop-opacity="0.6"/>
+        <stop offset="0%" stop-color="#3a7a22" stop-opacity="0.6"/>
         <stop offset="100%" stop-color="transparent"/>
       </radialGradient>
     </defs>
@@ -148,7 +148,7 @@ export default function Home() {
         {/* Background glow */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-[600px] h-[600px] rounded-full animate-hero-glow"
-            style={{ background: 'radial-gradient(circle, rgba(124,21,21,0.6) 0%, rgba(124,21,21,0.2) 40%, transparent 70%)' }} />
+            style={{ background: 'radial-gradient(circle, rgba(74,155,46,0.45) 0%, rgba(74,155,46,0.15) 40%, transparent 70%)' }} />
         </div>
         {/* Grain overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -161,9 +161,9 @@ export default function Home() {
           </div>
           {/* Divider */}
           <div className="flex items-center gap-3 justify-center mb-4">
-            <div className="h-px flex-1 max-w-[60px]" style={{ background: 'linear-gradient(to right, transparent, #7C1515)' }} />
+            <div className="h-px flex-1 max-w-[60px]" style={{ background: 'linear-gradient(to right, transparent, #3d6b2a)' }} />
             <div className="text-h-red text-[0.55rem] tracking-[4px] uppercase font-semibold">Coffee &amp; Sociality</div>
-            <div className="h-px flex-1 max-w-[60px]" style={{ background: 'linear-gradient(to left, transparent, #7C1515)' }} />
+            <div className="h-px flex-1 max-w-[60px]" style={{ background: 'linear-gradient(to left, transparent, #3d6b2a)' }} />
           </div>
           {/* Tagline */}
           <p className="text-white/40 text-sm leading-relaxed max-w-xs mx-auto mt-3 mb-6">
@@ -253,7 +253,7 @@ export default function Home() {
           <div className="relative rounded-3xl overflow-hidden border border-h-border p-10">
             {/* bg glow */}
             <div className="absolute inset-0 pointer-events-none"
-              style={{ background: 'radial-gradient(ellipse at 50% 120%, rgba(124,21,21,0.4) 0%, transparent 65%)' }} />
+              style={{ background: 'radial-gradient(ellipse at 50% 120%, rgba(74,155,46,0.35) 0%, transparent 65%)' }} />
             <div className="relative z-10">
               <div className="text-5xl mb-3">⛺</div>
               <h3 className="font-sans font-black text-white text-xl uppercase tracking-wider mb-2">Ada yang bisa kami bantu?</h3>

@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { anthropic, MODEL, isAiEnabled, extractText, aiErrorDetails } from '@/lib/anthropic'
 
 export const runtime = 'nodejs'

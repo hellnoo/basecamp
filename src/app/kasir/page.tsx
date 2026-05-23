@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 export const dynamic = 'force-dynamic'
 import { useEffect, useRef, useState, useMemo } from 'react'
 import { supabase } from '@/lib/supabase'
@@ -707,20 +707,18 @@ export default function KasirPage() {
         <div
           onClick={() => setIsIdle(false)}
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center cursor-pointer select-none"
-          style={{ backgroundColor: '#7C1515' }}
+          style={{ backgroundColor: '#1e4d12' }}
         >
           <div className="text-center animate-pulse" style={{ animationDuration: '3s' }}>
-            <div className="font-serif text-7xl mb-2" style={{ color: '#D4B896', fontFamily: 'var(--font-playfair)', letterSpacing: '0.05em' }}>
-              هالو
-            </div>
-            <div className="font-sans font-black text-3xl tracking-[0.3em] uppercase mb-1" style={{ color: '#D4B896' }}>
+            <div className="text-7xl mb-4">⛺</div>
+            <div className="font-sans font-black text-3xl tracking-[0.3em] uppercase mb-1" style={{ color: '#c8e6b0' }}>
               basecamp
             </div>
-            <div className="text-xs tracking-[0.25em] uppercase" style={{ color: '#B8967A' }}>
+            <div className="text-xs tracking-[0.25em] uppercase" style={{ color: '#7ab85e' }}>
               Coffee &amp; Sociality
             </div>
           </div>
-          <div className="absolute bottom-10 text-xs tracking-widest uppercase opacity-40" style={{ color: '#D4B896' }}>
+          <div className="absolute bottom-10 text-xs tracking-widest uppercase opacity-40" style={{ color: '#c8e6b0' }}>
             Ketuk untuk melanjutkan
           </div>
         </div>

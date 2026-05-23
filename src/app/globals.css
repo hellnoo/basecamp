@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -81,8 +81,8 @@
   top: -25%; left: -15%;
   width: 65%; height: 170%;
   background: linear-gradient(140deg,
-    rgba(255, 188, 65, 0.75) 0%,
-    rgba(220, 125, 45, 0.35) 40%,
+    rgba(160, 210, 100, 0.55) 0%,
+    rgba(100, 170, 60, 0.25) 40%,
     transparent 68%
   );
   filter: blur(20px);

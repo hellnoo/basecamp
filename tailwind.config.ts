@@ -1,4 +1,4 @@
-﻿import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'h-bg':     '#0a0a0a',
-        'h-dark':   '#111111',
-        'h-card':   '#1a1a1a',
-        'h-border': '#2a2a2a',
-        'h-red':    '#e63329',
-        'h-red-d':  '#c0271f',
-        'h-muted':  '#6b7280',
+        'h-bg':     '#0c150a',
+        'h-dark':   '#111e0d',
+        'h-card':   '#192613',
+        'h-border': '#2c4022',
+        'h-red':    '#6db554',
+        'h-red-d':  '#519040',
+        'h-muted':  '#7a9b6e',
       },
       fontFamily: {
         sans:  ['var(--font-dm-sans)', 'sans-serif'],

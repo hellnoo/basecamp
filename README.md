@@ -1,4 +1,4 @@
-﻿# Basecamp — QR Menu Ordering System
+# Basecamp — QR Menu Ordering System
 
 Sistem pemesanan kafe berbasis QR code untuk Basecamp (Ternate).
 Customer scan QR di meja → pesan dari HP → realtime ke kasir.

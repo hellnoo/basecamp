@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 export const dynamic = 'force-dynamic'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
@@ -675,7 +675,7 @@ export default function AdminPage() {
                               className="w-full rounded-t-lg transition-all duration-700"
                               style={{
                                 height: `${Math.max(4, Math.round((d.revenue / maxRev) * 100))}px`,
-                                background: d.revenue ? 'linear-gradient(180deg, #e63329, #c0271f)' : '#2a2a2a',
+                                background: d.revenue ? 'linear-gradient(180deg, #6db554, #4f7a3d)' : '#2a2a2a',
                               }}
                             />
                           </div>
@@ -701,7 +701,7 @@ export default function AdminPage() {
                                 style={{
                                   width: `${Math.round((hourCounts[h] / maxHour) * 100)}%`,
                                   background: hourCounts[h] > maxHour * 0.7
-                                    ? 'linear-gradient(90deg,#e63329,#c0271f)'
+                                    ? 'linear-gradient(90deg,#6db554,#4f7a3d)'
                                     : hourCounts[h] > maxHour * 0.4
                                     ? 'linear-gradient(90deg,#ca8a04,#a16207)'
                                     : '#3a3a3a',

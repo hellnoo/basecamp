@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 export const dynamic = 'force-dynamic'
 import { useEffect, useRef, useState, Suspense } from 'react'
 import Script from 'next/script'
@@ -47,11 +47,11 @@ function generatePlaceholder(item: MenuItem): string {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
     <defs>
       <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#7C1515"/>
-        <stop offset="100%" stop-color="#2D0808"/>
+        <stop offset="0%" stop-color="#1e4d12"/>
+        <stop offset="100%" stop-color="#0d2608"/>
       </linearGradient>
       <radialGradient id="glow" cx="50%" cy="45%" r="45%">
-        <stop offset="0%" stop-color="#A02020" stop-opacity="0.6"/>
+        <stop offset="0%" stop-color="#3a7a22" stop-opacity="0.6"/>
         <stop offset="100%" stop-color="transparent"/>
       </radialGradient>
     </defs>

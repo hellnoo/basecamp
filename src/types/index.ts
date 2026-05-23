@@ -1,4 +1,4 @@
-﻿export type HppComponent = { nama: string; biaya: number }
+export type HppComponent = { nama: string; biaya: number }
 
 export type StoreSettings = {
   id: number
