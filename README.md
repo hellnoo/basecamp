@@ -40,14 +40,15 @@ Customer scan QR di meja → pesan dari HP → realtime ke kasir.
 
 ## Setup
 
-1. Buat `.env.local`, isi:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - `ADMIN_PASSWORD`
-   - `KASIR_PASSWORD`
-   - `ANTHROPIC_API_KEY` (untuk fitur AI)
-   - `VAPID_PUBLIC_KEY` / `VAPID_PRIVATE_KEY` (untuk Web Push)
+1. Buat project di [supabase.com](https://supabase.com/dashboard) → New Project
+2. Copy `NEXT_PUBLIC_SUPABASE_URL` dan `NEXT_PUBLIC_SUPABASE_ANON_KEY` dari Settings → API
+3. Isi `.env.local` (template sudah tersedia, VAPID keys sudah digenerate)
+4. Jalankan `supabase-setup.sql` di Supabase SQL Editor
+5. `npm install && npm run dev`
 
-2. Jalankan `supabase-setup.sql` di Supabase SQL Editor
+## Credentials Default
 
-3. `npm install && npm run dev`
+```
+Admin password : lihat .env.local → ADMIN_PASSWORD
+Kasir password : lihat .env.local → KASIR_PASSWORD
+```
