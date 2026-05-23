@@ -207,8 +207,8 @@ export default function AdminPage() {
 
   const loadItems = async () => {
     setLoading(true)
-    const { data } = await supabase.from('menu_items').select('*').order('category').order('name')
-    if (data) setItems(data as MenuItem[])
+    const res = await fetch('/api/menu')
+    if (res.ok) { const data = await res.json(); setItems(data as MenuItem[]) }
     setLoading(false)
   }
 
@@ -228,15 +228,15 @@ export default function AdminPage() {
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault(); setSaving(true)
-    const { error } = editing
-      ? await supabase.from('menu_items').update(form).eq('id', editing.id)
-      : await supabase.from('menu_items').insert(form)
-    if (error) { alert('Gagal simpan: ' + error.message); setSaving(false); return }
+    const res = editing
+      ? await fetch(`/api/menu/${editing.id}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form) })
+      : await fetch('/api/menu', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form) })
+    if (!res.ok) { const { error } = await res.json(); alert('Gagal simpan: ' + error); setSaving(false); return }
     await loadItems(); setShowForm(false); setSaving(false)
   }
 
   const handleDelete = async (id: string) => {
-    await supabase.from('menu_items').delete().eq('id', id)
+    await fetch(`/api/menu/${id}`, { method: 'DELETE' })
     setItems(prev => prev.filter(i => i.id !== id))
     setConfirmDeleteId(null)
   }
