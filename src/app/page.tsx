@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import { useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import type { MenuItem, StoreSettings } from '@/types'
@@ -155,11 +155,6 @@ export default function Home() {
           style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`, backgroundSize: '200px' }} />
 
         <div className="relative z-10 max-w-lg">
-          {/* Arabic */}
-          <div className="font-serif text-7xl md:text-8xl font-black mb-2 leading-none"
-            style={{ fontFamily: 'var(--font-playfair)', color: '#D4B896' }}>
-            هالو
-          </div>
           {/* Brand */}
           <div className="font-sans font-black text-white text-4xl md:text-5xl tracking-[0.25em] uppercase mb-3">
             BASECAMP
@@ -260,7 +255,7 @@ export default function Home() {
             <div className="absolute inset-0 pointer-events-none"
               style={{ background: 'radial-gradient(ellipse at 50% 120%, rgba(124,21,21,0.4) 0%, transparent 65%)' }} />
             <div className="relative z-10">
-              <div className="font-serif text-5xl mb-3" style={{ color: '#D4B896', fontFamily: 'var(--font-playfair)' }}>هالو</div>
+              <div className="text-5xl mb-3">⛺</div>
               <h3 className="font-sans font-black text-white text-xl uppercase tracking-wider mb-2">Ada yang bisa kami bantu?</h3>
               <p className="text-h-muted text-sm mb-8 leading-relaxed">
                 Reservasi, pertanyaan menu, atau sekadar mau say hi —<br />kami siap di WhatsApp.
